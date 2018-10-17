@@ -250,6 +250,9 @@ input[type="submit"] {
   background: #85E5D3;
   width: 100%;
   padding: 0 0 20px; }
+  .results a {
+    color: black;
+    text-decoration: none; }
   .results ul {
     overflow-y: auto;
     max-height: 200px; }
@@ -307,3 +310,42 @@ input[type="submit"] {
 
 .parking {
   background-image: url("../images/parking.svg"); }
+
+.information {
+  height: calc(100vh - 65px);
+  background: #e8e0ee; }
+  .information .image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px; }
+  .information h2 {
+    font-size: 25px;
+    margin-bottom: 20px; }
+  .information h3 {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .information p {
+    margin-bottom: 20px; }
+  .information .icons {
+    margin-bottom: 30px; }
+
+.address {
+  margin-bottom: 30px; }
+
+.back {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/up-arrow.svg");
+  background-position: top 50% center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  transform: rotate(-90deg);
+  transition: 0.4s ease-out all; }
+  .back:hover {
+    background-position: top 0 center; }
