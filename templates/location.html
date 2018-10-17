@@ -4,9 +4,13 @@
 	</head>
 	<body>
 		{% if location %}
-			<p>You want to search {{location}} </p>
+			<p>You want to search for location {{location}} </p>
 		{% else %}
 			<p>With no location </p>
 		{% endif %}
+		{% for res in data %}
+		  <p> {{res.name}} </p>
+		  <img src={{res.image_url}} />
+		{% endfor %}
 	</body>
 </html>
