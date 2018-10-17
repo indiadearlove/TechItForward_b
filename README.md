@@ -1,6 +1,6 @@
 # TechItForward_b
 
-To start run
+To start running
 ```
 python main.py
 ```
