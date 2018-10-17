@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from data import DATA_FILE
 
 app = Flask("MyApp")
 
@@ -14,9 +15,12 @@ def location_route():
 	print (form_data["location"])
 	return "All OK"
 
-@app.route("/location/<name>", methods=["GET"])
+@app.route("/location", methods=['POST'])
 
-def location(name):
-  return render_template('location.html', location=name)
+def location():
+	if request.form["location"]:
+	  return render_template('location.html', location=request.form["location"], data=DATA_FILE)
+	else:
+	  return 'Hey'
 
 app.run(debug=True)
