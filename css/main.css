@@ -1,0 +1,309 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #E5E3DE;
+  overflow: hidden;
+  line-height: 1.2; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold; }
+
+.sr {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important; }
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.section {
+  padding: 20px 0; }
+  @media (min-width: 700px) {
+    .section {
+      padding: 40px 0; } }
+
+.logo {
+  font-family: "Philosopher", sans-serif;
+  font-size: 25px;
+  color: black;
+  text-decoration: none; }
+
+.header {
+  padding: 20px 0;
+  background: #85E5D3; }
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  background: white; }
+  .search-form > div {
+    width: 100%; }
+  .search-form label {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    font-weight: bold; }
+  .search-form form {
+    display: flex;
+    flex-wrap: wrap; }
+  .search-form input[type="text"] {
+    flex-grow: 1;
+    background: #e8e0ee; }
+
+input {
+  outline: none;
+  border: none; }
+  input[type="text"] {
+    padding: 10px;
+    font-size: 20px; }
+
+.refine-button {
+  margin-top: 10px;
+  background: white;
+  transition: 0.4s ease-out all;
+  border: 1px solid #562D49; }
+  .refine-button:hover {
+    outline: none;
+    background: #562D49;
+    color: white; }
+
+button,
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  background: #85E5D3; }
+
+.button {
+  padding: 10px 20px;
+  font-size: 20px;
+  transition: 0.4s ease-out all; }
+  .button:hover {
+    background: #562D49;
+    color: white; }
+
+.map {
+  height: calc(100vh - $header); }
+  .map iframe {
+    width: 100%;
+    height: 100%; }
+
+.refine {
+  height: calc(100vh - 183px);
+  position: absolute;
+  top: 183px;
+  left: 0;
+  background: #e8e0ee;
+  padding: 40px 20px;
+  width: 100%; }
+  .refine h2 {
+    margin-bottom: 20px; }
+  .refine li {
+    padding: 10px;
+    list-style-type: none;
+    padding-left: 0;
+    position: relative; }
+  .refine ul {
+    margin-bottom: 40px; }
+  .refine label {
+    cursor: pointer; }
+  .refine input[type="checkbox"] {
+    margin-top: -1px; }
+
+.refined {
+  display: flex; }
+  .refined a {
+    margin-right: 10px; }
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  display: block; }
+  .close button {
+    background: none; }
+  .close:after, .close:before {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: #562D49;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transition: 0.4s ease-out all; }
+  .close:after {
+    transform: translateY(-50%) rotate(-45deg); }
+  .close:before {
+    transform: translateY(-50%) rotate(45deg); }
+  .close:hover:after {
+    transform: translateY(-50%) rotate(45deg); }
+  .close:hover:before {
+    transform: translateY(-50%) rotate(-45deg); }
+
+.results {
+  max-height: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #85E5D3;
+  width: 100%;
+  padding: 0 0 20px; }
+  .results ul {
+    overflow-y: auto;
+    max-height: 200px; }
+  .results li {
+    list-style-type: none; }
+  .results.expanded {
+    max-height: calc(100vh - 245px); }
+    .results.expanded ul {
+      max-height: calc(100vh - 245px); }
+
+.result {
+  border-bottom: 1px solid #562D49;
+  padding: 20px 10px; }
+
+.expand {
+  position: absolute;
+  top: -40px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background: #85E5D3;
+  display: block;
+  background-image: url("../images/up-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px; }
+  .expanded .expand {
+    transform: rotate(180deg); }
+
+.icons {
+  margin-top: 10px; }
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px; }
+
+.step-free {
+  background-image: url("../images/disabled-people.svg"); }
+
+.lift {
+  background-image: url("../images/elevator.svg"); }
+
+.toilet {
+  background-image: url("../images/disabled.svg"); }
+
+.door {
+  background-image: url("../images/opportunity.svg"); }
+
+.parking {
+  background-image: url("../images/parking.svg"); }

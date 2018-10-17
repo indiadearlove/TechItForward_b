@@ -1,0 +1,111 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unhindered</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Philosopher" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container">
+
+            <a class="logo" href="index.html">
+                <h1>
+                    Unhindered
+                </h1>
+            </a>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="search-form">
+
+            <div class="container">
+
+                <form method="post" action="/location_route">
+
+                    <label for="location">Location:</label>
+                    <input id="location" name="location" required="required" type="text" placeholder="e.g. N1C 4TB">
+                    <input class="button" type="submit" value="Search" id="submit-button">
+
+                </form>
+
+                <a href="index.html">
+                    <button class="refine-button">Refine X</button>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="refine">
+
+            <a href="index.html" class="close">
+                <button>
+                    <span class="sr">Close</span>
+                </button>
+            </a>
+
+            <h2>Refine your search</h2>
+
+            <form method="post" action="refined.html">
+
+                <ul>
+
+                    <li>
+                        <input type="checkbox" name="step-free" id="step-free">
+                        <label for="step-free">Step free access</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="lift" id="lift">
+                        <label for="lift">Lift available</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="parking" id="parking">
+                        <label for="parking">Parking outside venue</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="manual-door" id="manual-door">
+                        <label for="manual-door">Automatic door</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="accessed-toilet" id="accessed-toilet">
+                        <label for="accessed-toilet">Easily-acccessed accessible toilet</label>
+                    </li>
+
+                </ul>
+
+                <input class="button" type="submit" value="Apply">
+
+            </form>
+
+        </div>
+
+        <div class="map">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9933.573121116895!2d-0.127915536688548!3d51.506000446554644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1539783421063"
+                frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
