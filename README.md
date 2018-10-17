@@ -1,4 +1,6 @@
-# TechItForward_b
+# TechItForward_b - Woman Driven Development Hackathon
+
+A web app to help improve mobility access
 
 To start running
 ```
