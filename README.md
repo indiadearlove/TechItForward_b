@@ -17,3 +17,12 @@ To watch your sass files
 gulp watch
 ```
 
+## Team
+
+[Hannah Capocci-Hunt](https://github.com/viciouskitten)
+
+[Gunjan Sahityani](https://github.com/gsahityani)
+
+[Mahsa Dilmaghani](https://github.com/mahsadilmaghani)
+
+[India Dearlove](https://github.com/indiadearlove)
